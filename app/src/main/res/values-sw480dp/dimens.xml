@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input">38sp</dimen>
+    <dimen name="button">30sp</dimen>
+    <dimen name="respuesta">42sp</dimen>
+    <dimen name="margin">100dp</dimen>
+</resources>

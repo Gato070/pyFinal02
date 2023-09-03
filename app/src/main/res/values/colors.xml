@@ -2,4 +2,7 @@
 <resources>
     <color name="texto_usuario">#A020F0</color>
     <color name="texto_secundario">#967284</color>
+    <color name="texto_usuario600">#9411E6</color>
+    <color name="texto_secundario600">#986981</color>
+    <color name="texto_button_600">#1B1116</color>
 </resources>

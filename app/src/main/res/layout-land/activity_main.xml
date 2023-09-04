@@ -9,12 +9,13 @@
     tools:context=".view.MainActivity"
     android:padding="16dp">
 
+
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputUno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:hint="@string/hidden_texto"
         android:minHeight="48dp"
         android:singleLine="false"
@@ -27,13 +28,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputDos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:hint="@string/hidden_Otro_texto"
         android:minHeight="48dp"
         android:textAlignment="center"
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custon_button"
         android:text="@string/button_comparar"
         android:textSize="@dimen/button"
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:hint="@string/hidden_pregunta"
         android:textAlignment="center"
         android:textColor="@color/texto_usuario"
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/custon_button"
         android:text="@string/button_reiniciar"

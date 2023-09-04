@@ -1,80 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/selina_farzaei_1"
-    tools:context=".view.MainActivity"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.MainActivity">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputUno"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/padreUno"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/margin"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        app:startIconDrawable="@drawable/insert_der"
-        app:counterEnabled="true"
-        app:counterMaxLength="25"
+        android:layout_marginTop="10dp"
         android:hint="@string/hidden_texto"
-        android:minHeight="48dp"
-        android:singleLine="false"
-        android:textAlignment="center"
-        android:textColor="@color/texto_usuario"
         android:textColorHint="@color/texto_secundario"
-        android:textSize="@dimen/input"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputDos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="140dp"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        app:startIconDrawable="@drawable/insert_der"
         app:counterEnabled="true"
         app:counterMaxLength="25"
-        android:hint="@string/hidden_Otro_texto"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        android:textColor="@color/texto_usuario"
-        android:textColorHint="@color/texto_secundario"
-        android:textSize="@dimen/input"
-        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputUno" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/insert_der">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/texto_usuario"
+            android:textSize="@dimen/input"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/padreDos"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="340dp"
-        android:background="@drawable/custon_button"
-        android:text="@string/button_comparar"
-        android:textSize="@dimen/button"
-        app:backgroundTint="@null"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hidden_Otro_texto"
+        android:textColorHint="@color/texto_secundario"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputDos" />
+        app:layout_constraintTop_toBottomOf="@+id/padreUno"
+        app:startIconDrawable="@drawable/insert_der">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/texto_usuario"
+            android:textSize="@dimen/input"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/viewModelTextResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="20dp"
         android:hint="@string/hidden_pregunta"
         android:textAlignment="center"
         android:textColor="@color/texto_usuario"
@@ -82,64 +75,31 @@
         android:textSize="@dimen/respuesta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/padreDos" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custon_button"
+        android:text="@string/button_comparar"
+        android:textSize="@dimen/button"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewModelTextResultado" />
 
     <Button
         android:id="@+id/buttonLimpiar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="340dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custon_button"
         android:text="@string/button_reiniciar"
         android:textSize="@dimen/button"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewModelTextResultado" />
-    <!--
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputUno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        app:startIconDrawable="@drawable/insert_der"
-        app:counterEnabled="true"
-        app:counterMaxLength="25"
-        android:hint="@string/hidden_texto">
-
-        <com.google.android.material.textfield.TextInputEditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputDos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
-        app:startIconDrawable="@drawable/insert_der"
-        app:counterEnabled="true"
-        app:counterMaxLength="25"
-        android:hint="@string/hidden_texto">
-
-        <com.google.android.material.textfield.TextInputEditText
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
 
 
-    -->
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

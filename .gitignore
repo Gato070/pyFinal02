@@ -7,39 +7,9 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-/caches
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-# Carpetas y archivos generados automáticamente que no deben rastrearse en Git
-
-# Carpeta de configuración de Android Studio
-.idea/
-
-# Archivos temporales
-.tmp/
-
-# Carpeta específica de Android
-android/
-
-# Carpeta de compilación de la aplicación
-app/build/
-
-# Carpetas temporales o generadas
-daemon/
-gradle/
-native/
-
-# Archivos de configuración específicos de Gradle
-gradle.properties
-gradlew
-gradlew.bat
-
-# Archivo de configuración de proyecto
-settings.gradle.kts
-
-# Carpetas de envoltorio de Gradle
-wrapper/
